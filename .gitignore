@@ -1,0 +1,18 @@
+# PyInstaller build outputs (the .exe is published on the Releases page)
+build/
+dist/
+*.spec
+*.exe
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+
+# Environment folders
+venv/
+.venv/
+env/
+
+# IDE / Editor settings
+.vscode/
+.idea/
