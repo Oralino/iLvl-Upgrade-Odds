@@ -16,3 +16,8 @@ env/
 # IDE / Editor settings
 .vscode/
 .idea/
+
+# Secrets: never commit
+.env
+.env.*
+!.env.example
