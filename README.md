@@ -43,15 +43,15 @@ The executable is written to `dist/`.
 
 ## Data
 
-The odds come from the Data tabs of the [upgrade odds spreadsheet](https://docs.google.com/spreadsheets/d/1vwajieBpz1aG5w9Bowha_bi0FKsclHv6GOT3r0qvzps/edit). Each row gives the probability (in basis points, 10000 = 100%) of moving from a current level to a target level, for jumps from +0 to +5.
+The odds come from the Upgrade Table tabs of the [upgrade odds spreadsheet](https://docs.google.com/spreadsheets/d/1vFb9oC9X8ZaV6It9wg1yczTTkggU54zAMFBs6FuPDZ8/edit), which reflects the latest patch. Each row of a table is a current iLvl, and each column is the chance of landing on a target iLvl. Jumps range from +0 to +5.
 
 | Item type | Source tab |
 |---|---|
-| Weapon | Weapons Data |
-| Armor | Accessory Data |
-| Accessory | Accessory Data |
+| Weapon | Weapon Upgrade Table |
+| Armor | Armor Upgrade Table |
+| Accessory | Accessory Upgrade Table |
 
-Armor uses the **Accessory Data** tab because armor and accessories share the same upgrade odds. The sheet's Armor Data tab holds different numbers and is not used.
+The tabs named "Data" (Weapons Data, Armor Data, Accessory Data) are not used.
 
 How the values are calculated:
 
@@ -61,4 +61,4 @@ How the values are calculated:
 * Avg attempts per +1 iLvl = 1 ÷ avg levels gained per attempt
 * Avg attempts until any upgrade = 1 ÷ upgrade chance
 
-Item level 90 is the cap, so an attempt at iLvl 90 always stays at 90.
+Item level 90 is the cap, so an attempt at iLvl 90 always stays at 90. The app ignores the sheet's iLvl 90 row.
